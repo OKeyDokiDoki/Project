@@ -7,7 +7,9 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
+target/
+.idea/
+*.iml
 coverage/
 .DS_Store
 Thumbs.db
-

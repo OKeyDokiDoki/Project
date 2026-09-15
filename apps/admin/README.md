@@ -2,5 +2,4 @@
 
 预留给商品库、会员、试穿数据、搭配策略、设备和内容管理。
 
-建议在用户端设计语言稳定后，使用 React + Vite 独立实现并复用 `packages/contracts`。
-
+建议在用户端设计语言稳定后，使用 Vue 3 + Vite 独立实现并复用 `packages/contracts`。

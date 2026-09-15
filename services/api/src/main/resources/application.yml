@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: smart-mirror-api
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
