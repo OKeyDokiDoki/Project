@@ -53,3 +53,10 @@ API 默认运行在 `http://localhost:8080`，健康检查地址为
 - 产品模块和后续开发阶段说明
 
 人体测量、服装分割、姿态估计、虚拟试穿生成和尺码推荐目前均为接口占位。
+
+## 开发文档
+
+- [开发标准](docs/DEVELOPMENT_STANDARDS.md)
+- [参与开发](CONTRIBUTING.md)
+- [架构说明](docs/ARCHITECTURE.md)
+- [开发路线](docs/ROADMAP.md)

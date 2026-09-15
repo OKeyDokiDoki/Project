@@ -33,7 +33,11 @@ importers:
         specifier: ^3.0.6
         version: 3.3.11(typescript@5.9.3)
 
-  packages/contracts: {}
+  packages/contracts:
+    devDependencies:
+      typescript:
+        specifier: ^5.9.2
+        version: 5.9.3
 
 packages:
 
