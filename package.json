@@ -1,0 +1,12 @@
+{
+  "name": "ai-smart-mirror",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.15.1",
+  "scripts": {
+    "dev:web": "pnpm --filter @smart-mirror/web dev",
+    "build:web": "pnpm --filter @smart-mirror/web build",
+    "typecheck": "pnpm -r typecheck"
+  }
+}
+

@@ -1,0 +1,262 @@
+:root {
+  font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #16191b;
+  background: #f2f3f1;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.topbar {
+  height: 72px;
+  padding: 0 clamp(20px, 5vw, 72px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f8f6;
+  border-bottom: 1px solid #dfe1dc;
+}
+
+.brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  color: #f8f8f6;
+  background: #111315;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-button,
+.profile-button {
+  height: 40px;
+  border: 0;
+  background: transparent;
+  color: #33383b;
+}
+
+.icon-button {
+  width: 40px;
+  display: grid;
+  place-items: center;
+}
+
+.profile-button {
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-left: 1px solid #d8dad5;
+}
+
+.mirror-stage {
+  min-height: 560px;
+  padding: 56px clamp(24px, 8vw, 120px) 42px;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(380px, 1.15fr);
+  align-items: center;
+  gap: clamp(40px, 8vw, 120px);
+  background: #dfe5df;
+  overflow: hidden;
+}
+
+.stage-copy {
+  max-width: 580px;
+  z-index: 1;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: #276d56;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0;
+  max-width: 520px;
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.lead {
+  max-width: 480px;
+  margin: 24px 0 30px;
+  color: #505956;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.primary-button {
+  height: 48px;
+  padding: 0 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  background: #166044;
+  font-weight: 700;
+}
+
+.scan-visual {
+  display: grid;
+  place-items: center;
+}
+
+.scan-frame {
+  position: relative;
+  width: min(100%, 460px);
+  aspect-ratio: 0.82;
+  border: 1px solid rgba(22, 96, 68, 0.42);
+  background:
+    linear-gradient(rgba(23, 81, 62, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 81, 62, 0.08) 1px, transparent 1px),
+    #edf1ec;
+  background-size: 32px 32px;
+}
+
+.person-silhouette {
+  position: absolute;
+  inset: 9% 23% 0;
+  background: #bac5be;
+  clip-path: polygon(38% 0, 62% 0, 69% 10%, 66% 17%, 82% 25%, 100% 47%, 88% 52%, 75% 39%, 76% 100%, 54% 100%, 50% 60%, 46% 100%, 24% 100%, 25% 39%, 12% 52%, 0 47%, 18% 25%, 34% 17%, 31% 10%);
+}
+
+.scan-line {
+  position: absolute;
+  top: 42%;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: #1ea475;
+  box-shadow: 0 0 14px #1ea475;
+}
+
+.measure {
+  position: absolute;
+  padding: 7px 9px;
+  color: #f7faf8;
+  background: #173d31;
+  font-size: 11px;
+}
+
+.measure-a { top: 25%; left: 5%; }
+.measure-b { top: 51%; right: 4%; }
+.measure-c { bottom: 14%; left: 7%; }
+
+.quick-actions {
+  padding: 24px clamp(20px, 5vw, 72px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: #d7d9d4;
+}
+
+.action-item {
+  min-height: 106px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 42px 1fr 18px;
+  align-items: center;
+  gap: 13px;
+  text-align: left;
+  border: 0;
+  background: #fafaf8;
+}
+
+.action-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  color: #176247;
+  background: #e4eee8;
+}
+
+.action-item strong,
+.action-item small {
+  display: block;
+}
+
+.action-item small {
+  margin-top: 6px;
+  color: #727875;
+}
+
+.action-arrow {
+  color: #989d99;
+}
+
+@media (max-width: 880px) {
+  .mirror-stage {
+    min-height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .scan-frame {
+    width: min(86vw, 420px);
+  }
+
+  .quick-actions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .topbar {
+    padding: 0 16px;
+  }
+
+  .icon-button {
+    display: none;
+  }
+
+  .mirror-stage {
+    padding: 40px 20px 28px;
+    gap: 32px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .quick-actions {
+    padding: 14px;
+    grid-template-columns: 1fr;
+  }
+}
+

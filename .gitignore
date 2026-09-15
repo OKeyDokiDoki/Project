@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.vite/
+.env
+.env.local
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+coverage/
+.DS_Store
+Thumbs.db
+
